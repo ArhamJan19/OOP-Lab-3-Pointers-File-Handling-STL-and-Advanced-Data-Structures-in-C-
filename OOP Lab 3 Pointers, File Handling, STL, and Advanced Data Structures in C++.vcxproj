@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +128,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main %28StudentManager%29.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StudentManager.cpp" />
     <ClCompile Include="Task 1.cpp" />
+    <ClCompile Include="Task 2.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="ToDoList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StudentManager.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="ToDoList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
